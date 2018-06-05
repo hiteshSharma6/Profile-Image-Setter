@@ -23,21 +23,58 @@ nav {
 }
 
 #profile {
-    width: 80px;
-    height: 80px;
     position: relative;
+    border-radius: 50%;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-align: center;
     bottom: -7px;
-    border-radius: 50%;;
+    overflow: hidden;
 }
 
 #profile img {
-    width: 100%;
+    width: 82px;
+    height: 82px;
 }
 
 .createImg {
+    margin: 8px;
     font-size: 50px;
-    text-align: center;
     color: #ffffff;
-    line-height: 1.6;
+    line-height: 1.35;
+    width: 66px;
+    height: 66px;
+}
+
+#modal-image {
+    display: inherit;
+    align-self: center;
+    margin: 50px 0px 30px;
+}
+
+#modal-image img {
+    width: 242px;
+    height: 242px;
+}
+
+.bigImage {
+    font-size: 160px;
+    line-height: 1.25;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+    width: 198px;
+    height: 198px;
+    bottom: 0px;
+    cursor: context-menu;
+}
+
+.model-rmv {
+    border-top: none;
+    justify-content: center;
+}
+
+.btn-comm {
+    font-size: 24px;
+    font-size-adjust: unset;
 }

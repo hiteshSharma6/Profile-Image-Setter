@@ -1,27 +1,47 @@
 <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container baseline">
-    <a class="navbar-brand" href="#"><img src="http://res.cloudinary.com/soosoory/image/upload/v1528105560/intelliticks-logo.png" alt=""></a>
+    <a class="navbar-brand" href=""><img src="http://res.cloudinary.com/soosoory/image/upload/v1528105560/intelliticks-logo.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">   
         <li class="nav-item active">
-          <a class="nav-link" href="#">Features<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="">Features<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Benefits</a>
+          <a class="nav-link" href="">Benefits</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Why IntelliTicks?</a>
+          <a class="nav-link" href="">Why Change Color?</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Get a Demo</a>
+          <a class="nav-link" href="" (click)="logout()">Click Here</a>
         </li>
       </ul>
     </div>
-      <a href="/profile" id="profile">
-      <img id="profile-img" src="http://res.cloudinary.com/soosoory/image/upload/v1528117655/male-user.png">
+    <div style="display: inherit;">
+      <a href="" id="profile" data-toggle="modal" data-target="#exampleModalCenter">
+      <img class="profile-img" src="http://res.cloudinary.com/soosoory/image/upload/v1528117655/male-user.png">
       </a>
-  </div>
+    </div>
+    </div>
 </nav>
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" style="background-color: rgba(255,255,255,0.05);">
+          <div class="modal-header" style="padding-top: 0px; border-bottom: none;">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 30px; color: #fff">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <div class="modal-body" id="modal-image">
+          {{imgElement}}
+        </div>
+        <div class="modal-footer model-rmv" *ngIf='user.editable'>
+          <button type="button" class="btn btn-primary btn-block btn-comm" *ngIf='canUpload'>Upload</button>
+          <button type="button" class="btn btn-danger btn-block btn-comm" *ngIf='!canUpload'>Remove</button>
+        </div>
+      </div>
+    </div>
+  </div>
